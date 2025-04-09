@@ -249,18 +249,53 @@
   </div>
   
   
-  <!-- Submit & Cancel Buttons -->
-  <div id="M_layout_content_PCDZ_M67QS82_ctl00_validationControl_SubmitButtons" class="submit_buttons">
-    <input
-      type="submit"
-      name="M$layout$content$PCDZ$M67QS82$ctl00$validationControl$cmdSubmit"
-      value="Submit"
-      id="M_layout_content_PCDZ_M67QS82_ctl00_validationControl_cmdSubmit"
-      class="button"
-    />
-    <input type="button" action="" value="Cancel" id="CancelUpload" class="light_button" />
-  </div>
-  
+ <!-- Submit & Cancel Buttons -->
+<style>
+  .button {
+    background-color: #f7a800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #e69900; /* Slightly darker on hover */
+  }
+
+  .light_button {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .light_button:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+
+<div id="M_layout_content_PCDZ_M67QS82_ctl00_validationControl_SubmitButtons" class="submit_buttons">
+  <input
+    type="submit"
+    name="M$layout$content$PCDZ$M67QS82$ctl00$validationControl$cmdSubmit"
+    value="Submit"
+    id="M_layout_content_PCDZ_M67QS82_ctl00_validationControl_cmdSubmit"
+    class="button"
+  />
+  <input
+    type="button"
+    value="Cancel"
+    id="CancelUpload"
+    class="light_button"
+  />
+</div>
+
   <!-- Optional Resend Code -->
   <p class="resend-note">
     Didn’t receive the code?
